@@ -1,72 +1,92 @@
-/* Reset general*/
-* ¨{
+/* Reset general */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/*Estilo base del cuerpo*/
+
+/* Estilo base del cuerpo */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
 }
 
-/* Contenedor general*/
+/* Contenedor general */
 .container {
     width: 90%;
     max-width: 1200px;
     margin: auto;
 }
-/* Encabezado y menu*/
+
+/* ENCABEZADO Y MENÚ */
+
 .header {
     background-color: #003366;
     color: white;
     padding: 15px 0;
 }
+
 .header-content {
     display: flex;
     align-items: center;
-justify-content: space-between;
-flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
+
 .logo {
     width: 80px;
     height: auto;
 }
-/*Menu de Navegacion*/
+
+/* Menú de navegación */
 .nav-list {
     list-style: none;
     display: flex;
+    gap: 20px;
 }
+
 .nav-list a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
+
 .nav-list a:hover {
-text-decoration: underline;
+    text-decoration: underline;
 }
-/*Seccion hero */
+
+/* ---------------------- */
+/* SECCIÓN HERO */
+/* ---------------------- */
+
 .hero {
-background-color: #005599;
-color: white;
-padding: 60px;
-text-align: center;
+    background-color: #005599;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
 }
+
 .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
-/* Seccion capacitaciones*/
+
+/* ---------------------- */
+/* SECCIÓN CAPACITACIONES */
+/* ---------------------- */
+
 .capacitaciones {
     background-color: white;
     padding: 40px 0;
 }
-.Capacitaciones h2 {
+
+.capacitaciones h2 {
     text-align: center;
     margin-bottom: 30px;
 }
+
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
