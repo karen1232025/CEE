@@ -4,53 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CEE</title>
-
+    <title>Corporacion Educativa Ecuador</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon"href="img/log.png"/>
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
 </head>
 
 <body>
-    <!--hntgj-->
-    <header>
-        <h1>Corporacion Educativa Ecuador</h1>
-        <p>¡Nuestra meta es la excelencia!</p>
+    <!--Encabezado con el logo y menu de navegacion-->
+    <header class="header">
+        <div class="container header-content">
+            <!--logo Institucional-->
+            <img src="img/logo.png" alt="logo CEE" class="logo">
+            <!--menu de navegacion-->
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="inicio">inicio</a></li>
+                    <li><a href="#capacitaciones">capacitaciones</a></li>
+                    <li><a href="nosotros">nosotros</a></li>
+                    <li><a href="contactos">contactos</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href=" ">Inicio</a></li>
-            <li><a href=" ">contactos</a></li>
-            <li><a href=" ">Informacion</a></li>
-            <li><a href=" ">Iniciar sesion</a></li>
-        </ul>
-    </nav>
-    <main>
-        <article>
-            <h2>Area de informatica</h2>
-            <p>En el area de informatica se especializan en paquetes de ofimatica y conocimientos en las
-                tendencias actuales respecto a la tecnologuia</p>
-        </article>
-        <section>
-            <h3>Capacitaciones tecnico profesionales de la corporacion educativa ecuador</h3>
-            <ul>
-                <li><a href="">Informatica</a></li>
-                <li><a href="">Parvularia</a></li>
-                <li><a href="">Enfermeria</a></li>
-                <li><a href="">Urgencias y emergencias medicas</a></li>
-                <li><a href="">Belleza integral</a></li>
-                <li><a href="">Contabilidad y administracion</a></li>
-            </ul>
-        </section>
-    </main>
-    <aside>
-        <h4>Sobre nosotros</h4>
-        <p>Somos una corporacion efocada en el desrrollo de profrcionales 
-            en las diversas areas de tendencias actuales </p>
-    </aside>
-    <footer>
-        <p>Copyright 2025/CEE Todos los derechos reservados/ Desarrollado By Karen Muepaz</p>
+    <!--Seccion principal de bienbenida-->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <h1>formato profecinales del futuro</h1>
+            <p>La Corporacion Educativa Ecuador ofrece formacion
+                tecnica de calidad para transformar vidas.</p>
+        </div>
+    </section>
+    <!--Seccion de capacitaciones-->
+    <section class="capacitaciones" id="capacitaciones">
+        <div class="grid">
+            <div class="card">Belleza integral</div>
+            <div class="card">Informatica</div>
+            <div class="card">Contabilidad y Administracion</div>
+            <div class="card">Urgencias y Emergencias Medicas</div>
+            <div class="card">Enfermeria</div>
+            <div class="card">Parvularia</div>
+        </div>
+    </section>
+    <!--Seccion sobre nosotros-->
+    <section class="nosotros" id="nosotros">
+        <div class="container">
+            <h2>¿Quienes somos?</h2>
+            <p>
+                Somos una corporacion Educativa dedicada a la formacion tecnica
+                y profecional en diversas areas del conocimiento.
+                Nuestra mision es brindar oportunidades de desarrollo a
+                jovenes y adultos mediante capacitaciones de alta calidad academica.
+            </p>
+        </div>
+    </section>
+    <!--Seccion de contacto-->
+    <section class="contacto" id="contacto">
+        <div class="container">
+            <h2>contactanos</h2>
+            <form class="formulario">
+                <input type="text" placeholder="tu nombre" required>
+                <input type="email" placeholder="tu correo" required>
+                <textarea placeholder="escribe tu mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <!--Pie de pagina-->
+    <footer class="footer">
+        <p> copyringht 2025 Corporacion Educativa Ecuador.
+            todos los derechos reservados.
+            Desarrollado by Karen Muepaz
+        </p>
     </footer>
-
 </body>
 
 </html>
