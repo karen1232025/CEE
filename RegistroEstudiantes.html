@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Estudiantes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form class="formulario">
+        <h1>Registro de Estudiantes</h1>
+        <input type="text" name="nombre" placeholder="Nombres completos" required>
+        <input type="text" name="cedula" placeholder="Cédula" required>
+        <input type="number" name="edad" placeholder="Edad" min="12" max="75" required>
+        <select name="Sexo">
+            <option value="" disabled selected>Sexo</option>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">otro</option>
+        </select>
+        <input type="date" name="nacimiento" placeholder="Fecha de nacimiento" required>
+        <input type="text" name="Direccion" placeholder="Direccion" required>
+        <input type="text" name="telefono" placeholder="Teléfono" required>
+        <input type="text" name="email" placeholder="Correo Electrónico" required>
+
+        <select name="capacitaciones" required>
+            <option value=""disabled selected>Area de capacitación</option>
+            <option value="Belleza integral">Belleza integral</option>
+            <option value="Informatica">Informática</option>
+            <option value="Contabilidad y Administracion">Contabilidad y Administracion</option>
+            <option value="Urgencias Medicas">Urgencias y Emergencias Medicas</option>
+            <option value="Enfermeria">Enfermería</option>
+            <option value="Parvularia">Parvularia</option>
+        </select>
+<button type="submit">Registrar Estudiantes</button>
+    </form>
+</body>
+
+</html>
