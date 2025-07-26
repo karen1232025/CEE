@@ -131,14 +131,22 @@ body {
     gap: 15px;
     max-width: 500px;
     margin: auto;
+    text-align: center;
 }
 
 .formulario input,
-.formulario textarea {
+.formulario textarea,
+.formulario select {
     padding: 10px;
     font-size: 1rem;
     border: 1px solid #ccc;
     border-radius: 4px;
+}
+.Formulario label {
+    text-align: left;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
 .formulario button {
@@ -153,6 +161,20 @@ body {
 
 .formulario button:hover {
     background-color: #005599;
+}
+/* Opciones de Asistencia*/
+.opciones-asistencia {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+    justify-content: flex-start;
+}
+.opciones-asistencia label {
+    font-weight: normal;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
 }
 
 /* ---------------------- */

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Estudiantes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form class="formulario">
+        <h1>Registro de Estudiantes</h1>
+        <input type="text" name="nombre" placeholder="Nombres completos" required>
+        <label for="cedula">Escriba su nuemero de cedula:</label>
+        <input type="text" name="cedula" placeholder="Cédula" required>
+
+        <label for="capacitacion">Elija el Area de Capacitación:</label>
+        <select name="capacitaciones" required>
+            <option value="" disabled selected>Area de capacitación</option>
+            <option value="Belleza integral">Belleza integral</option>
+            <option value="Informatica">Informática</option>
+            <option value="Contabilidad y Administracion">Contabilidad y Administracion</option>
+            <option value="Urgencias Medicas">Urgencias y Emergencias Medicas</option>
+            <option value="Enfermeria">Enfermería</option>
+            <option value="Parvularia">Parvularia</option>
+        </select>
+
+        <label for="horario">Elija el Dia de clases:</label>
+        <select name="dia">
+            <option value="" disabled selected>Dia de clases </option>
+            <option value="Viernes">Viernes</option>
+            <option value="Sabado">Sabado</option>
+        </select>
+
+        <label for="horario">Elija el horario:</label>
+        <select name="horario">
+            <label for="horario">Elija el Horario:</label>
+            <option value="" disabled selected>Horario clases </option>
+            <option value="mañana">Mañana</option>
+            <option value="Tarde">Tarde</option>
+        </select>
+
+        <label for="periodo">Elija el Periodo Académico:</label>
+        <select name="periodo">
+            <option value="" disabled selected>Periodo académico</option>
+            <option value="Noviembre">2024 - 2025</option>
+            <option value="Mayo">2025 - 2026</option>
+        </select>
+
+        <label>KAREN ZENITH MUEPAZ VALENZUELA:</label>
+        <div class="opciones- asistencia">
+            <label><input type="radio" name="asistencia">presente</label>
+            <label><input type="radio" name="asistencia">Ausente</label>
+            <label><input type="radio" name="asistencia">Falta justificada</label>
+             <label><input type="radio" name="asistencia">Falta injustificada</label>
+
+
+
+        </div>
+
+        <button type="submit">Registrar Asistencia</button>
+        <button type="button" class="btn-cancelar">btn-cancelar</button>
+    </form>
+</body>
+
+</html>
